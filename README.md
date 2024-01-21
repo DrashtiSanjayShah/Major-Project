@@ -1,4 +1,4 @@
-# Banksights: ChurnVision:
+# Banksights: ChurnVision
 The objectives of the churn prediction design in the banking sector are multifaceted, aiming to address colorful challenges and openings associated with client retention. 
 
 # Objectives
