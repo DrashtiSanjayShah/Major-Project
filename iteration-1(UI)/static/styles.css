@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+body::before {
+    content: "";
+    background-image: url('piggy.jpeg');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5; /* Adjust the opacity value here (0.5 means 50% opacity) */
+    z-index: -1; /* Ensure the pseudo-element stays behind other content */
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust padding for space around the logo and navbar */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: blue;
+    text-decoration: overline;
+    font-size: large;
+}
+
+
+.main {
+    padding: 50px 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 46px;
+padding: 17px;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: large;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.prediction {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
