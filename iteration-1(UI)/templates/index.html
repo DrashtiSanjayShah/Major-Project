@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Your Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Check</a></li>
+                    <li><a href="#">Graphs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="form-section">
+        <div class="container">
+            <form action="/predict" method="post">
+                <input type="text" name="CreditScore" placeholder="Credit Score">
+                <input type="text" name="Age" placeholder="Age">
+                <input type="text" name="Gender" placeholder="Gender">
+                <input type="text" name="EstimatedSalary" placeholder="Estimated Salary">
+                <input type="text" name="Balance" placeholder="Balance">
+                <input type="text" name="Tenure" placeholder="Tenure">
+                <input type="text" name="NumOfProducts" placeholder="Number of Products">
+                <input type="text" name="IsActiveMember" placeholder="Is Active Member">
+                <input type="text" name="HasCrCard" placeholder="Has Credit Card">
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
